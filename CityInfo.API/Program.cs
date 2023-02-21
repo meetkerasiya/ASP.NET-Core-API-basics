@@ -19,7 +19,7 @@ else
     app.UseExceptionHandler();
 }
 
-app.UseStaticFiles();
+app.UseStatusCodePages();
 //app.UseEndpoints(endpoints =>
 //{
 //    endpoints.MapControllers("default", "{controller=Home}/{action=Index}");
