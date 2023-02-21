@@ -29,3 +29,5 @@ C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\Micr
 C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
 C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Debug\net7.0\CityInfo.API.csproj.CopyComplete
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll

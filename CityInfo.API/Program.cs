@@ -1,17 +1,19 @@
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Newtonsoft.Json.Serialization;
+using Microsoft.AspNetCore.JsonPatch;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 var services = builder.Services;
 
+//services.AddNewtonsoftJson();
 //services.AddMvc();
 services.AddMvc(option => option.EnableEndpointRouting = false)
     .AddMvcOptions(o =>
     {
-        o.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
-    });
+       // o.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
+    }).AddNewtonsoftJson();
     //.AddNewtonsoftJson(o=>
     //{
     //    if(o.SerializerSettings.ContractResolver != null)
