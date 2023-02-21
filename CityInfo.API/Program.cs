@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Newtonsoft.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,16 +7,20 @@ var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 
 //services.AddMvc();
-services.AddMvc(option=>option.EnableEndpointRouting=false)
-    .AddNewtonsoftJson(o=>
+services.AddMvc(option => option.EnableEndpointRouting = false)
+    .AddMvcOptions(o =>
     {
-        if(o.SerializerSettings.ContractResolver != null)
-        {
-            var castedResolver = o.SerializerSettings.ContractResolver
-                                    as DefaultContractResolver;
-            castedResolver.NamingStrategy = null;
-        }
+        o.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
     });
+    //.AddNewtonsoftJson(o=>
+    //{
+    //    if(o.SerializerSettings.ContractResolver != null)
+    //    {
+    //        var castedResolver = o.SerializerSettings.ContractResolver
+    //                                as DefaultContractResolver;
+    //        castedResolver.NamingStrategy = null;
+    //    }
+    //});
 
 
 var app = builder.Build();
