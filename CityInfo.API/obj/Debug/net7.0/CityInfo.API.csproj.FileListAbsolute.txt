@@ -24,3 +24,8 @@ C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Debug\net7.0\refi
 C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Debug\net7.0\CityInfo.API.pdb
 C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Debug\net7.0\CityInfo.API.genruntimeconfig.cache
 C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Debug\net7.0\ref\CityInfo.API.dll
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Debug\net7.0\CityInfo.API.csproj.CopyComplete

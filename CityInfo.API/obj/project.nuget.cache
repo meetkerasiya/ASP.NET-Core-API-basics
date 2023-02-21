@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "J+2z0Ug8jP3giiNCB5p6FVj931SAiP5PM2gTwFxucY62+FU2ZAxlvtiT/z/6aH/EgPTdLmmi7IVE4SbMUWht7Q==",
+  "dgSpecHash": "RzIMUD73qXHobfVNBZkaAxCYlXztj7b0Ectk3KBYsKmSCAhhP3V5i2L2bLDWDqRj1nyE5s3NfziyoFWdzevTVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Meet  Kerasiya\\source\\repos\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Meet  Kerasiya\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.3\\microsoft.aspnetcore.jsonpatch.7.0.3.nupkg.sha512",
+    "C:\\Users\\Meet  Kerasiya\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.3\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.3.nupkg.sha512",
+    "C:\\Users\\Meet  Kerasiya\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Meet  Kerasiya\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Meet  Kerasiya\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
