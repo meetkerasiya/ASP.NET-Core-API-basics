@@ -54,6 +54,7 @@ try
 
     services.AddScoped<ICityInfoRepository, CityInfoRepository>();
 
+    services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 
     var app = builder.Build();

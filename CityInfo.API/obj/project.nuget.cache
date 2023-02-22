@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rypyWymByrdyUd7JXmX6YdPo3sSzw9T21ShXCo1XrqpRGmg7cwq/Tt3kRpKtqa9ZQgKpt4dFYSldZNZqw3nlyQ==",
+  "dgSpecHash": "rNMk03pdf6inuvaC6KcowAnUf43MtUh4SF9WtA57s5aXr6Ig+1aq+IgC7Bl/zSK6RcDyWBbTBp9sqWSdM55yGA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Meet  Kerasiya\\source\\repos\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Meet  Kerasiya\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Meet  Kerasiya\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Meet  Kerasiya\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Meet  Kerasiya\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Meet  Kerasiya\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
