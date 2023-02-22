@@ -37,7 +37,13 @@ try
 
 
     //For Mock Mail Services
-    services.AddTransient<IMailService,CloudMailService>();
+#if DEBUG
+        services.AddTransient<IMailService,LocalMailService>();
+#else
+        services.AddTransient<IMailService,CloudMailService>();
+#endif
+
+
 
     var app = builder.Build();
 

@@ -74,3 +74,14 @@
 2023-02-22 11:29:59.6875||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 204 
 2023-02-22 11:29:59.6875||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.DeletePointOfInterest (CityInfo.API) in 15.1696ms 
 2023-02-22 11:29:59.6875||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE http://localhost:59631/api/cities/1/pointsofinterest/1 - - - 204 - - 51.7585ms 
+2023-02-22 11:39:52.6935||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 11:39:52.7738||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 11:39:52.7738||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 11:39:52.7738||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 11:39:52.7888||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 11:39:52.8698||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 81.6934ms 
+2023-02-22 11:39:57.6537||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE http://localhost:59631/api/cities/1/pointsofinterest/1 - - 
+2023-02-22 11:39:57.6831||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DeletePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeletePointOfInterest(Int32, Int32) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-22 11:39:57.6943||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 204 
+2023-02-22 11:39:57.6943||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.DeletePointOfInterest (CityInfo.API) in 11.5478ms 
+2023-02-22 11:39:57.6943||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE http://localhost:59631/api/cities/1/pointsofinterest/1 - - - 204 - - 43.3071ms 

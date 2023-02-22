@@ -1,0 +1,6 @@
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Release\net7.0\CityInfo.API.csproj.AssemblyReference.cache
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Release\net7.0\CityInfo.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Release\net7.0\CityInfo.API.AssemblyInfoInputs.cache
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Release\net7.0\CityInfo.API.AssemblyInfo.cs
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Release\net7.0\CityInfo.API.csproj.CoreCompileInputs.cache
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Release\net7.0\CityInfo.API.MvcApplicationPartsAssemblyInfo.cache
