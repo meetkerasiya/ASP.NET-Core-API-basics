@@ -87,3 +87,23 @@
 2023-02-22 15:23:18.0312 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-02-22 15:23:18.0312 Info Closing old configuration.
 2023-02-22 15:23:18.0312 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\NLog.config
+2023-02-22 15:25:03.5846 Info Message Template Auto Format enabled
+2023-02-22 15:25:03.5846 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-22 15:25:03.6040 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-02-22 15:25:03.6040 Info Closing old configuration.
+2023-02-22 15:25:03.6102 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\NLog.config
+2023-02-22 15:25:31.2294 Info Message Template Auto Format enabled
+2023-02-22 15:25:31.2294 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-22 15:25:31.2505 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-02-22 15:25:31.2505 Info Closing old configuration.
+2023-02-22 15:25:31.2505 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\NLog.config
+2023-02-22 15:36:15.8080 Info Message Template Auto Format enabled
+2023-02-22 15:36:15.8123 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-22 15:36:15.8292 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-02-22 15:36:15.8292 Info Closing old configuration.
+2023-02-22 15:36:15.8292 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\NLog.config
+2023-02-22 15:36:25.8670 Info Message Template Auto Format enabled
+2023-02-22 15:36:25.8670 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-22 15:36:25.8866 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-02-22 15:36:25.8866 Info Closing old configuration.
+2023-02-22 15:36:25.8941 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\NLog.config

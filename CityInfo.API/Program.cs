@@ -46,11 +46,15 @@ try
 #endif
 
     //EF
-    var connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=CityInfoDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+    var connectionString = builder.Configuration["ConnectionStrings:cityInfoDbConnectionString"];
     services.AddDbContext<CityInfoContext>(o=>
     {
         o.UseSqlServer(connectionString);
     });
+
+    services.AddScoped<ICityInfoRepository, CityInfoRepository>();
+
+
 
     var app = builder.Build();
 
