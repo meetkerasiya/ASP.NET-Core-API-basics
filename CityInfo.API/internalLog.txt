@@ -107,3 +107,18 @@
 2023-02-22 15:36:25.8866 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-02-22 15:36:25.8866 Info Closing old configuration.
 2023-02-22 15:36:25.8941 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\NLog.config
+2023-02-22 17:07:54.9531 Info Message Template Auto Format enabled
+2023-02-22 17:07:54.9531 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-22 17:07:54.9746 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-02-22 17:07:54.9746 Info Closing old configuration.
+2023-02-22 17:07:54.9864 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\NLog.config
+2023-02-22 17:14:35.8416 Info Message Template Auto Format enabled
+2023-02-22 17:14:35.8459 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-22 17:14:35.8773 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-02-22 17:14:35.8773 Info Closing old configuration.
+2023-02-22 17:14:35.8937 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\NLog.config
+2023-02-22 17:31:48.6339 Info Message Template Auto Format enabled
+2023-02-22 17:31:48.6398 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-22 17:31:48.6654 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-02-22 17:31:48.6654 Info Closing old configuration.
+2023-02-22 17:31:48.6806 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\NLog.config
