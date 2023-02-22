@@ -3,6 +3,7 @@ using Newtonsoft.Json.Serialization;
 using Microsoft.AspNetCore.JsonPatch;
 using NLog.Web;
 using NLog;
+using CityInfo.API.Services;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromXml("nlog.config").GetCurrentClassLogger();
 logger.Info("init main");
@@ -34,8 +35,13 @@ try
 
     builder.Host.UseNLog();
 
+
+    //For Mock Mail Services
+    services.AddTransient<IMailService,CloudMailService>();
+
     var app = builder.Build();
 
+   
 
     if (app.Environment.IsDevelopment())
     {
