@@ -85,3 +85,153 @@
 2023-02-22 11:39:57.6943||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 204 
 2023-02-22 11:39:57.6943||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.DeletePointOfInterest (CityInfo.API) in 11.5478ms 
 2023-02-22 11:39:57.6943||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE http://localhost:59631/api/cities/1/pointsofinterest/1 - - - 204 - - 43.3071ms 
+2023-02-22 11:47:28.5277||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 11:47:28.6160||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 11:47:28.6160||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 11:47:28.6160||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 11:47:28.6441||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 11:47:28.7360||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 93.0079ms 
+2023-02-22 11:47:35.8599||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE http://localhost:59631/api/cities/1/pointsofinterest/1 - - 
+2023-02-22 11:47:35.8891||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DeletePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeletePointOfInterest(Int32, Int32) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-22 11:47:35.8891||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 204 
+2023-02-22 11:47:35.8891||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.DeletePointOfInterest (CityInfo.API) in 12.3864ms 
+2023-02-22 11:47:35.8891||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE http://localhost:59631/api/cities/1/pointsofinterest/1 - - - 204 - - 43.7922ms 
+2023-02-22 11:48:43.3601||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 11:48:43.4431||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 11:48:43.4431||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 11:48:43.4431||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 11:48:43.4584||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 11:48:43.5340||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 76.2795ms 
+2023-02-22 11:48:46.9658||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE http://localhost:59631/api/cities/1/pointsofinterest/1 - - 
+2023-02-22 11:48:46.9983||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DeletePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeletePointOfInterest(Int32, Int32) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-22 11:48:46.9983||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 204 
+2023-02-22 11:48:46.9983||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.DeletePointOfInterest (CityInfo.API) in 12.528ms 
+2023-02-22 11:48:46.9983||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE http://localhost:59631/api/cities/1/pointsofinterest/1 - - - 204 - - 47.2129ms 
+2023-02-22 11:49:49.6665||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 11:49:49.7524||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 11:49:49.7524||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 11:49:49.7524||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 11:49:49.7707||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 11:49:49.8671||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 98.4828ms 
+2023-02-22 11:49:53.0551||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE http://localhost:59631/api/cities/1/pointsofinterest/1 - - 
+2023-02-22 11:49:53.0875||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DeletePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeletePointOfInterest(Int32, Int32) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-22 11:49:53.1014||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 204 
+2023-02-22 11:49:53.1014||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.DeletePointOfInterest (CityInfo.API) in 14.3557ms 
+2023-02-22 11:49:53.1014||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE http://localhost:59631/api/cities/1/pointsofinterest/1 - - - 204 - - 48.9565ms 
+2023-02-22 11:51:21.5745||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 11:51:21.6601||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 11:51:21.6601||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 11:51:21.6601||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 11:51:21.6762||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 11:51:21.7565||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 80.9059ms 
+2023-02-22 11:51:24.7154||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE http://localhost:59631/api/cities/1/pointsofinterest/1 - - 
+2023-02-22 11:51:24.7443||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DeletePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeletePointOfInterest(Int32, Int32) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-22 11:51:24.7555||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 204 
+2023-02-22 11:51:24.7555||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.DeletePointOfInterest (CityInfo.API) in 11.5388ms 
+2023-02-22 11:51:24.7555||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE http://localhost:59631/api/cities/1/pointsofinterest/1 - - - 204 - - 42.6081ms 
+2023-02-22 15:16:00.1162||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 15:16:00.2074||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 15:16:00.2074||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 15:16:00.2074||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 15:16:00.2220||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 15:16:00.3142||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 92.8777ms 
+2023-02-22 15:16:08.4393||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities - - 
+2023-02-22 15:16:08.4595||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controller.CitiesController (CityInfo.API). 
+2023-02-22 15:16:08.4595||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Model.CityDto, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-02-22 15:16:08.5175||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.CitiesController.GetCities (CityInfo.API) in 55.7843ms 
+2023-02-22 15:16:08.5175||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities - - - 200 1060 application/json;+charset=utf-8 79.1791ms 
+2023-02-22 15:17:40.6222||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 15:17:40.7026||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 15:17:40.7026||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 15:17:40.7026||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 15:17:40.7026||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 15:17:40.8056||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 89.8146ms 
+2023-02-22 15:17:51.5952||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 
+2023-02-22 15:17:51.6258||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreatePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePointOfInterest(Int32, CityInfo.API.Model.PointOfInterestForCreationDto) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-22 15:17:51.6891||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtRouteResult, writing value of type 'CityInfo.API.Model.PointOfInterestDto'. 
+2023-02-22 15:17:51.7087||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest (CityInfo.API) in 80.7233ms 
+2023-02-22 15:17:51.7087||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 - 201 58 application/json;+charset=utf-8 114.6616ms 
+2023-02-22 15:19:40.7270||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 15:19:40.8276||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 15:19:40.8276||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 15:19:40.8276||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 15:19:40.8420||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 15:19:40.9242||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 82.8060ms 
+2023-02-22 15:19:46.4266||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 
+2023-02-22 15:19:46.4558||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreatePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePointOfInterest(Int32, CityInfo.API.Model.PointOfInterestForCreationDto) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-22 15:19:46.5123||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtRouteResult, writing value of type 'CityInfo.API.Model.PointOfInterestDto'. 
+2023-02-22 15:19:46.5302||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest (CityInfo.API) in 72.7223ms 
+2023-02-22 15:19:46.5302||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 - 201 58 application/json;+charset=utf-8 104.6878ms 
+2023-02-22 15:20:14.6726||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 15:20:14.7585||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 15:20:14.7585||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 15:20:14.7585||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 15:20:14.7754||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 15:20:14.8733||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 99.5784ms 
+2023-02-22 15:20:43.7244||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/testdatabase - - 
+2023-02-22 15:20:43.7527||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "TestDatabase", controller = "Dummy"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestDatabase() on controller CityInfo.API.Controllers.DummyController (CityInfo.API). 
+2023-02-22 15:20:44.9668||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (127ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [CityInfoDb]; 
+2023-02-22 15:20:45.0120||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [CityInfoDb] SET READ_COMMITTED_SNAPSHOT ON;
+END; 
+2023-02-22 15:20:45.0257||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-02-22 15:20:45.0702||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Cities] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Description] nvarchar(200) NOT NULL,
+    CONSTRAINT [PK_Cities] PRIMARY KEY ([Id])
+); 
+2023-02-22 15:20:45.0702||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [PointOfInterests] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Description] nvarchar(200) NOT NULL,
+    [CityId] int NOT NULL,
+    CONSTRAINT [PK_PointOfInterests] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_PointOfInterests_Cities_CityId] FOREIGN KEY ([CityId]) REFERENCES [Cities] ([Id]) ON DELETE CASCADE
+); 
+2023-02-22 15:20:45.0702||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_PointOfInterests_CityId] ON [PointOfInterests] ([CityId]); 
+2023-02-22 15:20:45.0815||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing StatusCodeResult, setting HTTP status code 200 
+2023-02-22 15:20:45.0815||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API) in 1329.2669ms 
+2023-02-22 15:20:45.0815||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/testdatabase - - - 200 - - 1362.9255ms 
+2023-02-22 15:23:18.0554||ERROR|Program|Stopped program because of exception Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\Program.cs:line 55
+2023-02-22 15:23:18.6094||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (127ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [CityInfoDb]; 
+2023-02-22 15:23:18.6497||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [CityInfoDb] SET READ_COMMITTED_SNAPSHOT ON;
+END; 
+2023-02-22 15:23:18.6607||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-02-22 15:23:18.6996||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Cities] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Description] nvarchar(200) NOT NULL,
+    CONSTRAINT [PK_Cities] PRIMARY KEY ([Id])
+); 
+2023-02-22 15:23:18.6996||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [PointOfInterests] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Description] nvarchar(200) NOT NULL,
+    [CityId] int NOT NULL,
+    CONSTRAINT [PK_PointOfInterests] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_PointOfInterests_Cities_CityId] FOREIGN KEY ([CityId]) REFERENCES [Cities] ([Id]) ON DELETE CASCADE
+); 
+2023-02-22 15:23:18.6996||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_PointOfInterests_CityId] ON [PointOfInterests] ([CityId]); 

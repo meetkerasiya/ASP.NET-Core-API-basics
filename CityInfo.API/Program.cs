@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.JsonPatch;
 using NLog.Web;
 using NLog;
 using CityInfo.API.Services;
+using CityInfo.API.Context;
+using Microsoft.EntityFrameworkCore;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromXml("nlog.config").GetCurrentClassLogger();
 logger.Info("init main");
@@ -43,7 +45,12 @@ try
         services.AddTransient<IMailService,CloudMailService>();
 #endif
 
-
+    //EF
+    var connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=CityInfoDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+    services.AddDbContext<CityInfoContext>(o=>
+    {
+        o.UseSqlServer(connectionString);
+    });
 
     var app = builder.Build();
 

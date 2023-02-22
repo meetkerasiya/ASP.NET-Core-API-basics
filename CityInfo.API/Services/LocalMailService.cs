@@ -4,12 +4,18 @@ namespace CityInfo.API.Services
 {
     public class LocalMailService : IMailService
     {
-        public string _mailTo { get; set; } = "admin@mycompany.com";
-        public string _mailFrom { get; set; } = "noreply@mycompany.com";
+        private readonly IConfiguration _configuration;
+
+        public LocalMailService(IConfiguration configuration)
+        {
+            _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration)); 
+
+        }
+        
 
         public void Send(string subject, string message)
         {
-            Debug.WriteLine($"Mail from {_mailFrom} to {_mailTo}, with LocalMailService.");
+            Debug.WriteLine($"Mail from {_configuration["mailSettings:mailFromAddress"]} to {_configuration["mailSettings:mailToAddress"]}, with LocalMailService.");
             Debug.WriteLine($"Subject: {subject}");
             Debug.WriteLine($"Message: {message}");
         }
