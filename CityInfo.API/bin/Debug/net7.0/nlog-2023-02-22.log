@@ -1,0 +1,60 @@
+2023-02-22 10:59:30.5225||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 10:59:30.6004||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 10:59:30.6004||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 10:59:30.6004||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 10:59:30.6212||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 10:59:30.7017||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 81.5571ms 
+2023-02-22 10:59:35.6211||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities/10/pointsofinterest - - 
+2023-02-22 10:59:35.6487||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetPointsOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPointsOfInterest(Int32) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-22 10:59:35.6748||FATAL|CityInfo.API.Controller.PointsOfInterestController|Exception while getting points of interest for ciry with id 10 
+2023-02-22 10:59:35.6748||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2023-02-22 10:59:35.6748||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.GetPointsOfInterest (CityInfo.API) in 30.5827ms 
+2023-02-22 10:59:35.6748||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities/10/pointsofinterest - - - 500 - text/plain;+charset=utf-8 60.6250ms 
+2023-02-22 11:00:01.7452||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities/10/pointsofinterest - - 
+2023-02-22 11:00:01.7508||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetPointsOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPointsOfInterest(Int32) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-22 11:00:01.7508||FATAL|CityInfo.API.Controller.PointsOfInterestController|Exception while getting points of interest for ciry with id 10 
+2023-02-22 11:00:01.7508||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2023-02-22 11:00:01.7645||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.GetPointsOfInterest (CityInfo.API) in 13.6426ms 
+2023-02-22 11:00:01.7645||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities/10/pointsofinterest - - - 500 - text/plain;+charset=utf-8 45.0432ms 
+2023-02-22 11:00:31.3165||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 11:00:31.3975||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 11:00:31.3975||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 11:00:31.3975||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 11:00:31.4112||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 11:00:31.4863||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 75.8821ms 
+2023-02-22 11:00:36.2796||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities/10/pointsofinterest - - 
+2023-02-22 11:00:36.3088||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetPointsOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPointsOfInterest(Int32) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-22 11:00:36.3381||FATAL|CityInfo.API.Controller.PointsOfInterestController|Exception while getting points of interest for ciry with id 10 
+2023-02-22 11:00:36.3381||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2023-02-22 11:00:36.3436||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.GetPointsOfInterest (CityInfo.API) in 33.1949ms 
+2023-02-22 11:00:36.3436||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities/10/pointsofinterest - - - 500 - text/plain;+charset=utf-8 64.9631ms 
+2023-02-22 11:04:43.7519||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 11:04:43.8278||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 11:04:43.8278||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 11:04:43.8278||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 11:04:43.8431||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 11:04:43.9191||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 76.3420ms 
+2023-02-22 11:04:51.4514||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities/10/pointsofinterest - - 
+2023-02-22 11:04:51.4841||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetPointsOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPointsOfInterest(Int32) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-22 11:04:51.5183||FATAL|CityInfo.API.Controller.PointsOfInterestController|Exception while getting points of interest for ciry with id 10 
+2023-02-22 11:04:51.5183||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2023-02-22 11:04:51.5183||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.GetPointsOfInterest (CityInfo.API) in 38.2384ms 
+2023-02-22 11:04:51.5183||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities/10/pointsofinterest - - - 500 - text/plain;+charset=utf-8 73.2934ms 
+2023-02-22 11:06:18.8521||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 11:06:18.9323||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 11:06:18.9323||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 11:06:18.9323||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 11:06:18.9453||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 11:06:19.0239||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 79.6558ms 
+2023-02-22 11:06:42.9401||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities/10/pointsofinterest - - 
+2023-02-22 11:06:42.9718||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetPointsOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPointsOfInterest(Int32) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-22 11:06:43.0007||FATAL|CityInfo.API.Controller.PointsOfInterestController|Exception while getting points of interest for ciry with id 10 
+2023-02-22 11:06:43.0007||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2023-02-22 11:06:43.0007||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.GetPointsOfInterest (CityInfo.API) in 33.1384ms 
+2023-02-22 11:06:43.0007||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities/10/pointsofinterest - - - 500 - text/plain;+charset=utf-8 67.1141ms 
+2023-02-22 11:07:24.8687||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-22 11:07:24.9469||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-22 11:07:24.9469||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-22 11:07:24.9469||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-22 11:07:24.9610||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-22 11:07:25.0403||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 80.1059ms 

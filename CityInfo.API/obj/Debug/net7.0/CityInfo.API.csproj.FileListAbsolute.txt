@@ -31,3 +31,7 @@ C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\Newt
 C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\obj\Debug\net7.0\CityInfo.API.csproj.CopyComplete
 C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\nlog.config
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\NLog.dll
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\NLog.Extensions.Logging.dll
+C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\NLog.Web.AspNetCore.dll

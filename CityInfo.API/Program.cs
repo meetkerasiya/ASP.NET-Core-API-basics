@@ -1,19 +1,25 @@
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Newtonsoft.Json.Serialization;
 using Microsoft.AspNetCore.JsonPatch;
+using NLog.Web;
+using NLog;
 
-var builder = WebApplication.CreateBuilder(args);
+var logger = NLog.LogManager.Setup().LoadConfigurationFromXml("nlog.config").GetCurrentClassLogger();
+logger.Info("init main");
+try
+{
+    var builder = WebApplication.CreateBuilder(args);
 
 
-var services = builder.Services;
+    var services = builder.Services;
 
-//services.AddNewtonsoftJson();
-//services.AddMvc();
-services.AddMvc(option => option.EnableEndpointRouting = false)
-    .AddMvcOptions(o =>
-    {
-       // o.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
-    }).AddNewtonsoftJson();
+    //services.AddNewtonsoftJson();
+    //services.AddMvc();
+    services.AddMvc(option => option.EnableEndpointRouting = false)
+        .AddMvcOptions(o =>
+        {
+            // o.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
+        }).AddNewtonsoftJson();
     //.AddNewtonsoftJson(o=>
     //{
     //    if(o.SerializerSettings.ContractResolver != null)
@@ -24,27 +30,41 @@ services.AddMvc(option => option.EnableEndpointRouting = false)
     //    }
     //});
 
+    //For NLog
 
-var app = builder.Build();
+    builder.Host.UseNLog();
+
+    var app = builder.Build();
 
 
-if(app.Environment.IsDevelopment())
-{
-    app.UseDeveloperExceptionPage();
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
+    else
+    {
+        app.UseExceptionHandler();
+    }
+
+    app.UseStatusCodePages();
+    //app.UseEndpoints(endpoints =>
+    //{
+    //    endpoints.MapControllers("default", "{controller=Home}/{action=Index}");
+    //});
+
+    app.UseMvc();
+
+
+    app.Run();
 }
-else
+catch (Exception exception)
 {
-    app.UseExceptionHandler();
+    logger.Error(exception, "Stopped program because of exception");
+    throw;
+}
+{
+    // Ensure to flush and stop internal timers/threads before application-exit (Avoid segmentation fault on Linux)
+    NLog.LogManager.Shutdown();
 }
 
-app.UseStatusCodePages();
-//app.UseEndpoints(endpoints =>
-//{
-//    endpoints.MapControllers("default", "{controller=Home}/{action=Index}");
-//});
-
-app.UseMvc();
-
-
-app.Run();
 

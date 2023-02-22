@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[7.0.3, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.2.2, )"
             }
           },
           "imports": [

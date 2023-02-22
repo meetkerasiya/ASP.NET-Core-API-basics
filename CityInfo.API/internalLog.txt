@@ -1,0 +1,29 @@
+2023-02-22 10:59:30.3688 Info Message Template Auto Format enabled
+2023-02-22 10:59:30.3737 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-22 10:59:30.3937 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-02-22 10:59:30.3937 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\NLog.config
+2023-02-22 10:59:30.4127 Info Configuration initialized.
+2023-02-22 10:59:30.4286 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.2.1561. Product version: 5.1.2+f57745d9fb1124b8629db879019db120a57698ab. GlobalAssemblyCache: False
+2023-02-22 10:59:30.4286 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\NLog.config
+2023-02-22 11:00:31.1585 Info Message Template Auto Format enabled
+2023-02-22 11:00:31.1585 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-22 11:00:31.1886 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-02-22 11:00:31.1886 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\NLog.config
+2023-02-22 11:00:31.2065 Info Configuration initialized.
+2023-02-22 11:00:31.2065 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.2.1561. Product version: 5.1.2+f57745d9fb1124b8629db879019db120a57698ab. GlobalAssemblyCache: False
+2023-02-22 11:00:31.2065 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\NLog.config
+2023-02-22 11:04:43.2692 Info Message Template Auto Format enabled
+2023-02-22 11:04:43.2692 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-22 11:04:43.3158 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-02-22 11:04:43.3323 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\NLog.config
+2023-02-22 11:04:43.6506 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\bin\Debug\net7.0\NLog.config
+2023-02-22 11:06:18.7171 Info Message Template Auto Format enabled
+2023-02-22 11:06:18.7207 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-22 11:06:18.7379 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-02-22 11:06:18.7379 Info Closing old configuration.
+2023-02-22 11:06:18.7512 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\NLog.config
+2023-02-22 11:07:24.7271 Info Message Template Auto Format enabled
+2023-02-22 11:07:24.7271 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-22 11:07:24.7555 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-02-22 11:07:24.7555 Info Closing old configuration.
+2023-02-22 11:07:24.7683 Info Validating config: TargetNames=logfile, ConfigItems=20, FilePath=C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\NLog.config
