@@ -1,4 +1,5 @@
-﻿using CityInfo.API.Model;
+﻿using AutoMapper;
+using CityInfo.API.Model;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -13,12 +14,14 @@ namespace CityInfo.API.Controller
         private readonly ILogger<PointsOfInterestController> _logger;
         private readonly IMailService _mailService;
         private readonly ICityInfoRepository _cityInfoRepository;
+        private readonly IMapper _mapper;
 
-        public PointsOfInterestController(ILogger<PointsOfInterestController> logger, IMailService mailService,ICityInfoRepository cityInfoRepository)
+        public PointsOfInterestController(ILogger<PointsOfInterestController> logger, IMailService mailService,ICityInfoRepository cityInfoRepository,IMapper mapper)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _mailService = mailService ?? throw new ArgumentNullException(nameof(mailService));
             _cityInfoRepository = cityInfoRepository ?? throw new ArgumentNullException(nameof(cityInfoRepository));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
 
@@ -107,23 +110,18 @@ namespace CityInfo.API.Controller
                 return NotFound();
             }
 
-            var maxPointOfInterestId= CitiesDataStore.current.Cities.SelectMany(
-                x=>x.PointsOfInterest).Max(p=>p.Id);
+            var finalPointOfInterest = _mapper.Map<Entities.PointOfInterest>(pointOfInterest);
+            _cityInfoRepository.AddPointOfInterestForCity(cityId, finalPointOfInterest);
+            _cityInfoRepository.Save();
 
-            var finalPointOfInterest = new PointOfInterestDto()
-            {
-                Id = ++maxPointOfInterestId,
-                Name = pointOfInterest.Name,
-                Description = pointOfInterest.Description,
-
-            };
-
-            city.PointsOfInterest.Add(finalPointOfInterest);
+            var createdPOIToReturn = _mapper.
+                Map<Model.PointOfInterestDto>(finalPointOfInterest);
+           
 
             return CreatedAtRoute(
                 "GetPointOfInterest",
-                new { cityId, id = finalPointOfInterest.Id },
-                finalPointOfInterest
+                new { cityId, id = createdPOIToReturn.Id },
+                createdPOIToReturn
                 );
         }
 

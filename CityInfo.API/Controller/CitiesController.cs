@@ -36,7 +36,7 @@ namespace CityInfo.API.Controller
             //}
             //return Ok(results);
 
-            return Ok(_mapper.Map<IEnumerable<CityWithoutPointsOfInterestDto>>(cityEntities));
+            return Ok(_mapper.Map<List<CityWithoutPointsOfInterestDto>>(cityEntities));
         }
 
         [HttpGet("{id}")]

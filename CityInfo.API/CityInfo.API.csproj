@@ -25,4 +25,12 @@
     <PackageReference Include="NLog.Web.AspNetCore" Version="5.2.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\.editorconfig" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,598 @@
+2023-02-23 09:26:18.2502||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-23 09:26:18.3409||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-23 09:26:18.3438||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-23 09:26:18.3438||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-23 09:26:18.3438||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-23 09:26:18.5309||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 180.8641ms 
+2023-02-23 09:26:18.5849||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/favicon.ico - - 
+2023-02-23 09:26:18.5849||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/favicon.ico - - - 404 - text/plain 5.2366ms 
+2023-02-23 09:26:30.7394||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities - - 
+2023-02-23 09:26:30.7717||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controller.CitiesController (CityInfo.API). 
+2023-02-23 09:26:32.3457||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+ORDER BY [c].[Name] 
+2023-02-23 09:26:32.4423||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.CitiesController.GetCities (CityInfo.API) in 1668.9114ms 
+2023-02-23 09:26:32.4730||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[CityInfo.API.Entities.City, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CityInfo.API.Model.CityWithoutPointsOfInterestDto, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+City -> CityWithoutPointsOfInterestDto
+CityInfo.API.Entities.City -> CityInfo.API.Model.CityWithoutPointsOfInterestDto
+   at lambda_method51(Closure, City, CityWithoutPointsOfInterestDto, ResolutionContext)
+   at lambda_method50(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method50(Closure, Object, IEnumerable`1, ResolutionContext)
+   at CityInfo.API.Controller.CitiesController.GetCities() in C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\Controller\CitiesController.cs:line 39
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-23 09:26:32.4730||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities - - - 500 - text/plain;+charset=utf-8 1743.4629ms 
+2023-02-23 09:27:23.5619||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-23 09:27:23.6239||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-23 09:27:23.6257||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-23 09:27:23.6257||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-23 09:27:23.6257||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-23 09:27:23.6802||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 48.6158ms 
+2023-02-23 09:27:27.6619||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities - - 
+2023-02-23 09:27:27.6821||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controller.CitiesController (CityInfo.API). 
+2023-02-23 09:27:28.4721||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+ORDER BY [c].[Name] 
+2023-02-23 09:27:28.5394||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.CitiesController.GetCities (CityInfo.API) in 855.4185ms 
+2023-02-23 09:27:28.5619||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EntityQueryable`1 -> IEnumerable`1
+Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[CityInfo.API.Entities.City, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CityInfo.API.Model.CityWithoutPointsOfInterestDto, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+City -> CityWithoutPointsOfInterestDto
+CityInfo.API.Entities.City -> CityInfo.API.Model.CityWithoutPointsOfInterestDto
+   at lambda_method51(Closure, City, CityWithoutPointsOfInterestDto, ResolutionContext)
+   at lambda_method24(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method24(Closure, Object, IEnumerable`1, ResolutionContext)
+   at CityInfo.API.Controller.CitiesController.GetCities() in C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\Controller\CitiesController.cs:line 39
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-23 09:27:28.5720||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities - - - 500 - text/plain;+charset=utf-8 910.0597ms 
+2023-02-23 09:32:44.0463||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-23 09:32:44.1283||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-23 09:32:44.1283||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-23 09:32:44.1283||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-23 09:32:44.1431||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-23 09:32:44.2217||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 79.2982ms 
+2023-02-23 09:32:46.6665||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities - - 
+2023-02-23 09:32:46.6885||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controller.CitiesController (CityInfo.API). 
+2023-02-23 09:32:47.9910||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+ORDER BY [c].[Name] 
+2023-02-23 09:32:48.0627||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.CitiesController.GetCities (CityInfo.API) in 1372.2319ms 
+2023-02-23 09:32:48.0889||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[CityInfo.API.Entities.City, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CityInfo.API.Model.CityWithoutPointsOfInterestDto, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+City -> CityWithoutPointsOfInterestDto
+CityInfo.API.Entities.City -> CityInfo.API.Model.CityWithoutPointsOfInterestDto
+   at lambda_method51(Closure, City, CityWithoutPointsOfInterestDto, ResolutionContext)
+   at lambda_method50(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method50(Closure, Object, IEnumerable`1, ResolutionContext)
+   at CityInfo.API.Controller.CitiesController.GetCities() in C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\Controller\CitiesController.cs:line 39
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-23 09:32:48.0988||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities - - - 500 - text/plain;+charset=utf-8 1432.2819ms 
+2023-02-23 09:38:21.8841||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-23 09:38:21.9671||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-23 09:38:21.9696||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-23 09:38:21.9696||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-23 09:38:21.9696||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-23 09:38:22.0644||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 83.1706ms 
+2023-02-23 09:38:25.2782||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities - - 
+2023-02-23 09:38:25.3031||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controller.CitiesController (CityInfo.API). 
+2023-02-23 09:38:26.0366||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+ORDER BY [c].[Name] 
+2023-02-23 09:38:26.1041||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.CitiesController.GetCities (CityInfo.API) in 799.2002ms 
+2023-02-23 09:38:26.1266||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[CityInfo.API.Entities.City, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CityInfo.API.Model.CityWithoutPointsOfInterestDto, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+City -> CityWithoutPointsOfInterestDto
+CityInfo.API.Entities.City -> CityInfo.API.Model.CityWithoutPointsOfInterestDto
+   at lambda_method51(Closure, City, CityWithoutPointsOfInterestDto, ResolutionContext)
+   at lambda_method50(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method50(Closure, Object, IEnumerable`1, ResolutionContext)
+   at CityInfo.API.Controller.CitiesController.GetCities() in C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\Controller\CitiesController.cs:line 39
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-23 09:38:26.1266||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities - - - 500 - text/plain;+charset=utf-8 858.9267ms 
+2023-02-23 09:39:21.6865||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-23 09:39:21.7652||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-23 09:39:21.7652||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-23 09:39:21.7652||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-23 09:39:21.7652||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-23 09:39:21.8561||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 77.7326ms 
+2023-02-23 09:39:25.4256||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities - - 
+2023-02-23 09:39:25.4488||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controller.CitiesController (CityInfo.API). 
+2023-02-23 09:39:26.1771||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+ORDER BY [c].[Name] 
+2023-02-23 09:39:26.2413||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.CitiesController.GetCities (CityInfo.API) in 790.6827ms 
+2023-02-23 09:39:26.2634||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CityWithoutPointsOfInterestDto
+System.Collections.Generic.List`1[[CityInfo.API.Entities.City, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> CityInfo.API.Model.CityWithoutPointsOfInterestDto
+   at lambda_method50(Closure, Object, CityWithoutPointsOfInterestDto, ResolutionContext)
+   at CityInfo.API.Controller.CitiesController.GetCities() in C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\Controller\CitiesController.cs:line 39
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-23 09:39:26.2731||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities - - - 500 - text/plain;+charset=utf-8 847.5103ms 
+2023-02-23 09:39:55.8488||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-23 09:39:55.9281||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-23 09:39:55.9281||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-23 09:39:55.9281||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-23 09:39:55.9426||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-23 09:39:56.0192||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 77.3495ms 
+2023-02-23 09:39:59.1208||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities - - 
+2023-02-23 09:39:59.1449||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controller.CitiesController (CityInfo.API). 
+2023-02-23 09:39:59.9157||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+ORDER BY [c].[Name] 
+2023-02-23 09:39:59.9877||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.CitiesController.GetCities (CityInfo.API) in 840.6268ms 
+2023-02-23 09:40:00.0129||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[CityInfo.API.Entities.City, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[CityInfo.API.Model.CityWithoutPointsOfInterestDto, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+City -> CityWithoutPointsOfInterestDto
+CityInfo.API.Entities.City -> CityInfo.API.Model.CityWithoutPointsOfInterestDto
+   at lambda_method51(Closure, City, CityWithoutPointsOfInterestDto, ResolutionContext)
+   at lambda_method50(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method50(Closure, Object, List`1, ResolutionContext)
+   at CityInfo.API.Controller.CitiesController.GetCities() in C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\Controller\CitiesController.cs:line 39
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-23 09:40:00.0258||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities - - - 500 - text/plain;+charset=utf-8 904.9563ms 
+2023-02-23 09:43:24.1711||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-23 09:43:24.2488||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-23 09:43:24.2506||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-23 09:43:24.2506||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-23 09:43:24.2506||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-23 09:43:24.3407||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 77.9817ms 
+2023-02-23 09:43:28.6727||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/api/cities - - 
+2023-02-23 09:43:28.6934||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controller.CitiesController (CityInfo.API). 
+2023-02-23 09:43:29.4331||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+ORDER BY [c].[Name] 
+2023-02-23 09:43:29.4783||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Model.CityWithoutPointsOfInterestDto, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-02-23 09:43:29.5294||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.CitiesController.GetCities (CityInfo.API) in 834.4401ms 
+2023-02-23 09:43:29.5335||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/api/cities - - - 200 247 application/json;+charset=utf-8 860.8273ms 
+2023-02-23 10:03:01.6412||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-23 10:03:01.7198||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-23 10:03:01.7198||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-23 10:03:01.7198||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-23 10:03:01.7345||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-23 10:03:01.8121||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 78.2916ms 
+2023-02-23 10:03:03.0123||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 
+2023-02-23 10:03:03.0435||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreatePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePointOfInterest(Int32, CityInfo.API.Model.PointOfInterestForCreationDto) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-23 10:03:04.3415||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (20ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__cityId_0 
+2023-02-23 10:03:04.4421||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 200), @p2='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PointOfInterests] ([CityId], [Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2); 
+2023-02-23 10:03:04.4861||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest (CityInfo.API) in 1440.723ms 
+2023-02-23 10:03:04.5100||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PointOfInterest -> PointOfInterestDto
+CityInfo.API.Entities.PointOfInterest -> CityInfo.API.Model.PointOfInterestDto
+   at lambda_method114(Closure, Object, PointOfInterestDto, ResolutionContext)
+   at CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest(Int32 cityId, PointOfInterestForCreationDto pointOfInterest) in C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\Controller\PointsOfInterestController.cs:line 117
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-23 10:03:04.5194||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 - 500 - text/plain;+charset=utf-8 1507.1698ms 
+2023-02-23 10:03:37.5177||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-23 10:03:37.5940||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-23 10:03:37.5940||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-23 10:03:37.5940||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-23 10:03:37.5940||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-23 10:03:37.6868||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 79.3386ms 
+2023-02-23 10:03:40.6864||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 
+2023-02-23 10:03:40.7174||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreatePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePointOfInterest(Int32, CityInfo.API.Model.PointOfInterestForCreationDto) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-23 10:04:10.6662||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (21ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__cityId_0 
+2023-02-23 10:04:36.8710||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 200), @p2='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PointOfInterests] ([CityId], [Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2); 
+2023-02-23 10:04:46.7141||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest (CityInfo.API) in 65994.7199ms 
+2023-02-23 10:04:46.8319||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PointOfInterest -> PointOfInterestDto
+CityInfo.API.Entities.PointOfInterest -> CityInfo.API.Model.PointOfInterestDto
+   at lambda_method114(Closure, Object, PointOfInterestDto, ResolutionContext)
+   at CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest(Int32 cityId, PointOfInterestForCreationDto pointOfInterest) in C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\Controller\PointsOfInterestController.cs:line 117
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-23 10:04:46.8319||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 - 500 - text/plain;+charset=utf-8 66156.1639ms 
+2023-02-23 10:09:39.7269||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-23 10:09:39.8061||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-23 10:09:39.8061||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-23 10:09:39.8061||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-23 10:09:39.8203||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-23 10:09:39.8978||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 78.1775ms 
+2023-02-23 10:09:44.3816||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 
+2023-02-23 10:09:44.4112||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreatePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePointOfInterest(Int32, CityInfo.API.Model.PointOfInterestForCreationDto) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-23 10:09:45.2310||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (21ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__cityId_0 
+2023-02-23 10:09:45.3263||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 200), @p2='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PointOfInterests] ([CityId], [Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2); 
+2023-02-23 10:09:45.3682||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest (CityInfo.API) in 955.0525ms 
+2023-02-23 10:09:45.3945||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PointOfInterest -> PointOfInterestDto
+CityInfo.API.Entities.PointOfInterest -> CityInfo.API.Model.PointOfInterestDto
+   at lambda_method114(Closure, Object, PointOfInterestDto, ResolutionContext)
+   at CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest(Int32 cityId, PointOfInterestForCreationDto pointOfInterest) in C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\Controller\PointsOfInterestController.cs:line 117
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-23 10:09:45.3945||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 - 500 - text/plain;+charset=utf-8 1023.7257ms 
+2023-02-23 10:10:36.8069||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-23 10:10:36.8938||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-23 10:10:36.8938||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-23 10:10:36.8938||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-23 10:10:36.9087||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-23 10:10:36.9858||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 77.8845ms 
+2023-02-23 10:10:40.2473||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 
+2023-02-23 10:10:40.2760||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreatePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePointOfInterest(Int32, CityInfo.API.Model.PointOfInterestForCreationDto) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-23 10:10:41.0978||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (20ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__cityId_0 
+2023-02-23 10:10:41.1930||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 200), @p2='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PointOfInterests] ([CityId], [Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2); 
+2023-02-23 10:10:41.2358||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest (CityInfo.API) in 957.99ms 
+2023-02-23 10:10:41.2590||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PointOfInterest -> PointOfInterestDto
+CityInfo.API.Entities.PointOfInterest -> CityInfo.API.Model.PointOfInterestDto
+   at lambda_method114(Closure, Object, PointOfInterestDto, ResolutionContext)
+   at CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest(Int32 cityId, PointOfInterestForCreationDto pointOfInterest) in C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\Controller\PointsOfInterestController.cs:line 117
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-23 10:10:41.2691||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 - 500 - text/plain;+charset=utf-8 1021.8055ms 
+2023-02-23 10:10:43.6253||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 
+2023-02-23 10:10:43.6253||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreatePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePointOfInterest(Int32, CityInfo.API.Model.PointOfInterestForCreationDto) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-23 10:10:43.6429||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__cityId_0 
+2023-02-23 10:10:43.6429||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 200), @p2='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PointOfInterests] ([CityId], [Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2); 
+2023-02-23 10:10:43.6614||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest (CityInfo.API) in 34.4716ms 
+2023-02-23 10:10:43.6614||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PointOfInterest -> PointOfInterestDto
+CityInfo.API.Entities.PointOfInterest -> CityInfo.API.Model.PointOfInterestDto
+   at lambda_method114(Closure, Object, PointOfInterestDto, ResolutionContext)
+   at CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest(Int32 cityId, PointOfInterestForCreationDto pointOfInterest) in C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API\Controller\PointsOfInterestController.cs:line 117
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-23 10:10:43.6614||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 - 500 - text/plain;+charset=utf-8 40.2299ms 
+2023-02-23 10:11:06.7469||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Meet  Kerasiya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-23 10:11:06.8331||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-23 10:11:06.8331||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-23 10:11:06.8331||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Meet  Kerasiya\source\repos\CityInfo\CityInfo.API 
+2023-02-23 10:11:06.8466||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:59631/ - - 
+2023-02-23 10:11:06.9309||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:59631/ - - - 404 - text/plain 85.1920ms 
+2023-02-23 10:11:09.1498||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 
+2023-02-23 10:11:09.1792||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreatePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePointOfInterest(Int32, CityInfo.API.Model.PointOfInterestForCreationDto) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-23 10:11:10.0020||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (24ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__cityId_0 
+2023-02-23 10:11:10.0931||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 200), @p2='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PointOfInterests] ([CityId], [Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2); 
+2023-02-23 10:11:10.1076||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtRouteResult, writing value of type 'CityInfo.API.Model.PointOfInterestDto'. 
+2023-02-23 10:11:10.1309||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest (CityInfo.API) in 950.0219ms 
+2023-02-23 10:11:10.1309||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 - 201 59 application/json;+charset=utf-8 987.2228ms 
+2023-02-23 10:11:29.4150||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 
+2023-02-23 10:11:29.4150||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreatePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePointOfInterest(Int32, CityInfo.API.Model.PointOfInterestForCreationDto) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-23 10:11:29.4400||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__cityId_0 
+2023-02-23 10:11:29.4400||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 200), @p2='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PointOfInterests] ([CityId], [Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2); 
+2023-02-23 10:11:29.4400||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtRouteResult, writing value of type 'CityInfo.API.Model.PointOfInterestDto'. 
+2023-02-23 10:11:29.4400||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest (CityInfo.API) in 29.092ms 
+2023-02-23 10:11:29.4400||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 - 201 59 application/json;+charset=utf-8 31.4500ms 
+2023-02-23 10:11:31.1540||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 
+2023-02-23 10:11:31.1540||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreatePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePointOfInterest(Int32, CityInfo.API.Model.PointOfInterestForCreationDto) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-23 10:11:31.1960||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__cityId_0 
+2023-02-23 10:11:31.1960||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 200), @p2='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PointOfInterests] ([CityId], [Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2); 
+2023-02-23 10:11:31.1960||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtRouteResult, writing value of type 'CityInfo.API.Model.PointOfInterestDto'. 
+2023-02-23 10:11:31.1960||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest (CityInfo.API) in 44.7973ms 
+2023-02-23 10:11:31.1960||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 - 201 59 application/json;+charset=utf-8 45.7009ms 
+2023-02-23 10:11:32.0445||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 
+2023-02-23 10:11:32.0445||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreatePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreatePointOfInterest(Int32, CityInfo.API.Model.PointOfInterestForCreationDto) on controller CityInfo.API.Controller.PointsOfInterestController (CityInfo.API). 
+2023-02-23 10:11:32.0476||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @__cityId_0 
+2023-02-23 10:11:32.0476||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 200), @p2='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PointOfInterests] ([CityId], [Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2); 
+2023-02-23 10:11:32.0476||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtRouteResult, writing value of type 'CityInfo.API.Model.PointOfInterestDto'. 
+2023-02-23 10:11:32.0476||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CityInfo.API.Controller.PointsOfInterestController.CreatePointOfInterest (CityInfo.API) in 9.5129ms 
+2023-02-23 10:11:32.0476||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:59631/api/cities/3/pointsofinterest application/json 67 - 201 59 application/json;+charset=utf-8 10.1154ms 
